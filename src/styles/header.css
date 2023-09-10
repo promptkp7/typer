@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.site-name {
+    padding-top: 10px;
+}
+
+.logo {
+    width: 80px;
+    filter: invert(0.5);
+}

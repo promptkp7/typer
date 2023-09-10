@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    font-size: 20px;
+}
+
+.description {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #19b3b8;
+}
+
+a:hover {
+    color: #838686;
+}

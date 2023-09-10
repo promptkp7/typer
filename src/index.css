@@ -1,13 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 body {
+  background-color: #212135;
+  color: #19b3b8;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 30px;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  align-items: center;
+  display: grid;
+  height: 90vh;
+  gap: 10vh;
+  grid-template-rows: auto 1fr auto;
+  padding: 5vh;
+}
+
+#input {
+  outline: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.words {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.restart-button {
+  cursor: pointer;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #be3c88;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-top: auto;
+  display: flex;
+  transition: all 125ms ease-in-out;
+}
+
+.restart-button:focus {
+  color: rgb(58, 58, 58);
+  background-color: #838686;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.wordInput {
+  display: block;
+}
+
+.word {
+  margin-right: 15px;
+  height: 40px;
+}
+
+.word, .letter {
+  display: inline-block
+}
+
+.correct {
+  color: #838686;
+}
+
+.incorrect {
+  color: #ca4754;
+}
+
+.extra {
+  color: #7e2a33;
+}
+
+.reset {
+  transition: all 125ms ease-in-out;
+}
+
+.test-wrapper {
+  transition: all 200ms ease-in-out;
+  z-index: 999;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 50px;
+  position: absolute;
+  height: 150px;
+  max-width: 1000px;
+  margin: auto;
+  transition: all 200ms ease-in-out;
+}
+
+.top, .bottom{
+  text-align: center;
+}
+
+.top {
+  border-bottom: solid #838686 1px;
+  padding-bottom: 20px;
+}
+
+.bottom {
+  margin-top: 50px;
+  font-size: 50px;
+  color: #be3c88;
+}
+
+.stats {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.timer, .wpm {
+  display: inline-block;
+  color:#be3c88;
+}
+
+.timer {
+}
+
+.wpm {
+  margin-left: 30px;
+}
+
+
+
+
+.cursor {
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  transition: all ease-in-out 100ms;
+  animation: blink 1200ms ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0.5
+  }
 }
