@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/promptkp7/typer/static/css/main.eb901361.css",
-    "main.js": "/promptkp7/typer/static/js/main.8703fdb8.js",
-    "static/js/787.1ff653fe.chunk.js": "/promptkp7/typer/static/js/787.1ff653fe.chunk.js",
-    "index.html": "/promptkp7/typer/index.html",
-    "main.eb901361.css.map": "/promptkp7/typer/static/css/main.eb901361.css.map",
-    "main.8703fdb8.js.map": "/promptkp7/typer/static/js/main.8703fdb8.js.map",
-    "787.1ff653fe.chunk.js.map": "/promptkp7/typer/static/js/787.1ff653fe.chunk.js.map"
+    "main.css": "/typer/static/css/main.eb901361.css",
+    "main.js": "/typer/static/js/main.249db44a.js",
+    "static/js/787.1ff653fe.chunk.js": "/typer/static/js/787.1ff653fe.chunk.js",
+    "index.html": "/typer/index.html",
+    "main.eb901361.css.map": "/typer/static/css/main.eb901361.css.map",
+    "main.249db44a.js.map": "/typer/static/js/main.249db44a.js.map",
+    "787.1ff653fe.chunk.js.map": "/typer/static/js/787.1ff653fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb901361.css",
-    "static/js/main.8703fdb8.js"
+    "static/js/main.249db44a.js"
   ]
 }
